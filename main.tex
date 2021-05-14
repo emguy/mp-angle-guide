@@ -1,3 +1,5 @@
+\starttext
+\startMPpage
 numeric arrow_height, arrow_width;
 numeric u, radius, penscale, inner_radius;
 numeric angle_label_height[], angle_font_scale[];
@@ -26,7 +28,6 @@ lfive[2]  := 3.4u;
 arrow_height := 1.25u;
 arrow_width  := 1.8u;
 
-beginfig(0);
 p_arrow := (0, 0) -- (arrow_width/2, arrow_width/2)
   -- (arrow_width/4, arrow_width/2) -- (arrow_width/4, arrow_height)
   -- (-arrow_width/4, arrow_height) -- (-arrow_width/4, arrow_width/2)
@@ -93,5 +94,5 @@ for degree = 5 step 5 until 175:
   fi
 endfor
 
-endfig;
-end
+\stopMPpage
+\stoptext
